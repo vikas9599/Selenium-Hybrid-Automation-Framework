@@ -4,6 +4,9 @@ import java.io.File;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.mail.DefaultAuthenticator;
+import org.apache.commons.mail.Email;
+import org.apache.commons.mail.SimpleEmail;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -74,9 +77,30 @@ public class Utill {
 
 		File SrcFile = scrShot.getScreenshotAs(OutputType.FILE);
 		File DestFile = new File(fileWithPath);
-	
 		FileUtils.copyFile(SrcFile, DestFile);
 
 	}
 
-}
+	public void getAssertTestResult(String expectedResult, String actualResult) {
+		Reporter.log("waiting for Assertion Result...");
+		Assert.assertEquals(expectedResult, actualResult);
+		Reporter.log(" Assertion Result...");
+
+	}
+	
+	public void sendTestResultEmail() {
+	
+		Email email = new SimpleEmail();
+		email.setHostName("smtp.gmail.com");
+		email.setSmtpPort(465);
+		email.setAuthenticator(new DefaultAuthenticator("vikas@gmail.com", "password"));
+		email.setSSLOnConnect(true);
+		email.setFrom("user@gmail.com");
+		email.setSubject("TestMail");
+		email.setMsg("This is a test mail ... :-)");
+		email.addTo("foo@bar.com");
+		email.send();
+		
+	}
+	
+	}
