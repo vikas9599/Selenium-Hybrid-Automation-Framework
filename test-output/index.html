@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-TestSuit" class="navigator-link">
+              <span class="suite-name border-failed">TestSuit</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-TestSuit" class="navigator-link ">
+                    <span>D:\Selenium\Hybrid-Automation-master\Hybrid-Automation-master\VideoTestNG.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-TestSuit" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-TestSuit" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-TestSuit" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-TestSuit" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-TestSuit" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-TestSuit" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods, 1 failed,  4 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestSuit" class="hide-methods failed suite-TestSuit"> (hide)</a> <!-- hide-methods failed suite-TestSuit -->
+                      <a href="#" panel-name="suite-TestSuit" class="show-methods failed suite-TestSuit"> (show)</a> <!-- show-methods failed suite-TestSuit -->
+                    </span>
+                    <div class="method-list-content failed suite-TestSuit">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuit" title="com.v3mobi.testScripts.FirstTest" class="method navigator-link" hash-for-method="zingLogin(TC004, Vikas Reg, manadsdger, Y)">zingLogin(TC004, Vikas Reg, manadsdger, Y)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TestSuit -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-TestSuit" class="hide-methods skipped suite-TestSuit"> (hide)</a> <!-- hide-methods skipped suite-TestSuit -->
+                      <a href="#" panel-name="suite-TestSuit" class="show-methods skipped suite-TestSuit"> (show)</a> <!-- show-methods skipped suite-TestSuit -->
+                    </span>
+                    <div class="method-list-content skipped suite-TestSuit">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuit" title="com.v3mobi.testScripts.FirstTest" class="method navigator-link" hash-for-method="zingLogin(TC002, admin, manager, N)">zingLogin(TC002, admin, manager, N)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuit" title="com.v3mobi.testScripts.FirstTest" class="method navigator-link" hash-for-method="zingLogin(TC003, admin, manadsger, N)">zingLogin(TC003, admin, manadsger, N)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuit" title="com.v3mobi.testScripts.FirstTest" class="method navigator-link" hash-for-method="zingLogin(TC001, Vikas, mdcager, N)">zingLogin(TC001, Vikas, mdcager, N)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuit" title="com.v3mobi.testScripts.FirstTest" class="method navigator-link" hash-for-method="zingLogin(TC005, admin, manasddsdger, N)">zingLogin(TC005, admin, manasddsdger, N)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-TestSuit -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-TestSuit" class="panel TestSuit">
+          <div class="suite-TestSuit-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.v3mobi.testScripts.FirstTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="zingLogin(TC004, Vikas Reg, manadsdger, Y)">
+                  </a> <!-- zingLogin(TC004, Vikas Reg, manadsdger, Y) -->
+                  <span class="method-name">zingLogin</span>
+                  <span class="parameters">(TC004, Vikas Reg, manadsdger, Y)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=69.0.3497.92)
+  (Driver info: chromedriver=2.38.551601 (edb21f07fc70e9027c746edd3201443e011a61ed),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;LAPTOP-FQLHTR06&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.551601 (edb21f07fc70e9..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.92, webStorageEnabled: true}
+Session ID: 58dc8853efcbe38264cd4f7528439150
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:291)
+	at com.v3mobi.utills.Utill.takeScreenshot(Utill.java:75)
+	at com.v3mobi.testScripts.FirstTest.zingLogin(FirstTest.java:57)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuit-class-failed -->
+          <div class="suite-TestSuit-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.v3mobi.testScripts.FirstTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="zingLogin(TC002, admin, manager, N)">
+                  </a> <!-- zingLogin(TC002, admin, manager, N) -->
+                  <span class="method-name">zingLogin</span>
+                  <span class="parameters">(TC002, admin, manager, N)</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipped Test case is
+	at com.v3mobi.testScripts.FirstTest.zingLogin(FirstTest.java:47)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="zingLogin(TC003, admin, manadsger, N)">
+                  </a> <!-- zingLogin(TC003, admin, manadsger, N) -->
+                  <span class="method-name">zingLogin</span>
+                  <span class="parameters">(TC003, admin, manadsger, N)</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipped Test case is
+	at com.v3mobi.testScripts.FirstTest.zingLogin(FirstTest.java:47)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="zingLogin(TC001, Vikas, mdcager, N)">
+                  </a> <!-- zingLogin(TC001, Vikas, mdcager, N) -->
+                  <span class="method-name">zingLogin</span>
+                  <span class="parameters">(TC001, Vikas, mdcager, N)</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipped Test case is
+	at com.v3mobi.testScripts.FirstTest.zingLogin(FirstTest.java:47)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="zingLogin(TC005, admin, manasddsdger, N)">
+                  </a> <!-- zingLogin(TC005, admin, manasddsdger, N) -->
+                  <span class="method-name">zingLogin</span>
+                  <span class="parameters">(TC005, admin, manasddsdger, N)</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipped Test case is
+	at com.v3mobi.testScripts.FirstTest.zingLogin(FirstTest.java:47)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuit-class-skipped -->
+        </div> <!-- panel TestSuit -->
+        <div panel-name="test-xml-TestSuit" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Selenium\Hybrid-Automation-master\Hybrid-Automation-master\VideoTestNG.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;TestSuit&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test name=&quot;Login&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.v3mobi.testScripts.FirstTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login --&gt;
+&lt;/suite&gt; &lt;!-- TestSuit --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-TestSuit" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for TestSuit</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Login (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-TestSuit" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for TestSuit</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-TestSuit" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for TestSuit</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_TestSuit');
+function tableData_TestSuit() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'zingLogin')
+data.setCell(0, 2, 'com.v3mobi.testScripts.FirstTest')
+data.setCell(0, 3, 38044);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'zingLogin')
+data.setCell(1, 2, 'com.v3mobi.testScripts.FirstTest')
+data.setCell(1, 3, 228);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'zingLogin')
+data.setCell(2, 2, 'com.v3mobi.testScripts.FirstTest')
+data.setCell(2, 3, 13);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'zingLogin')
+data.setCell(3, 2, 'com.v3mobi.testScripts.FirstTest')
+data.setCell(3, 3, 8);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'zingLogin')
+data.setCell(4, 2, 'com.v3mobi.testScripts.FirstTest')
+data.setCell(4, 3, 5);
+window.suiteTableData['TestSuit']= { tableData: data, tableDiv: 'times-div-TestSuit'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 38 seconds</span>
+              <div id="times-div-TestSuit">
+              </div> <!-- times-div-TestSuit -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-TestSuit" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for TestSuit</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">zingLogin(TC004, Vikas Reg, manadsdger, Y)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">waiting for page to load...</span>
+                <span class="reporter-method-output">waiting for page to load...</span>
+                <span class="reporter-method-output">entering userName to the userName textbox</span>
+                <span class="reporter-method-output">entering userName to the userName textbox</span>
+                <span class="reporter-method-output">Testing With valid Credential </span>
+                <span class="reporter-method-output">waiting for 30 seconds...</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-TestSuit" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-TestSuit" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.v3mobi.testScripts.FirstTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">zingLogin(TC001, Vikas, mdcager, N)</span>
+                <span class="method-start">36615 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">zingLogin(TC002, admin, manager, N)</span>
+                <span class="method-start">36845 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">zingLogin(TC003, admin, manadsger, N)</span>
+                <span class="method-start">36855 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">zingLogin(TC004, Vikas Reg, manadsdger, Y)</span>
+                <span class="method-start">36863 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">zingLogin(TC005, admin, manasddsdger, N)</span>
+                <span class="method-start">74954 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">quiteBrowser</span>
+                <span class="method-start">74971 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SimpleSuit" verbose="1" >
+  <test name="com.v3mobi.testScripts" >
+    <classes>
+       <class name="com.v3mobi.testScripts.FirstTest" />
+    </classes>
+  </test>
+ </suite>
