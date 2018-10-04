@@ -1,5 +1,6 @@
 package com.v3mobi.utills;
 
+import java.awt.Robot;
 import java.io.File;
 import java.util.concurrent.TimeUnit;
 
@@ -13,6 +14,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -22,7 +24,11 @@ import org.testng.Reporter;
 public class Utill {
 
 	public static WebDriver driver;
-
+	
+	Actions act=new Actions(driver);
+	
+	
+	
 	public WebDriver selectBrowser(String browser) {
 		if (browser.equals("firefox") || browser.equals("FIREFOX")) {
 			String browserPath = "D:\\Selenium\\Hybrid-Automation-master\\Hybrid-Automation-master\\src\\test\\java\\com\\v3mobi\\drivers\\geckodriver.exe";
@@ -88,12 +94,36 @@ public class Utill {
 
 	}
 	
+	public void dragAndDropByPixel(WebElement webelement, int x, int y) {
+		Reporter.log("Draging operation is perfoming...");
+		act.dragAndDropBy(webelement,x, y).build().perform();
+		Reporter.log("Draging operation is perfomed...");
+
+	}
+	public void dragAndDropByPosition(WebElement source, WebElement destination) {
+		Reporter.log("Draging operation is perfoming...");
+		act.dragAndDrop(source, destination).perform();
+		Reporter.log("Draging operation is perfomed...");
+		
+
+	}
+	public void moveToElementActionToPositon(WebElement source) {
+		Reporter.log("Move Element operation is perfoming...");
+		act.moveToElement(source).perform();
+	}
+	
+	public void moveToElementActionByPositonPixel(WebElement webelement, int x, int y) {
+		Reporter.log("Move Element operation is perfoming...");
+		act.moveToElement(webelement, x, y).perform();
+	}
+	
+	/*
 	public void sendTestResultEmail() {
 	
 		Email email = new SimpleEmail();
-		email.setHostName("smtp.gmail.com");
+		email.setHostName("smtp.googlemail.com");
 		email.setSmtpPort(465);
-		email.setAuthenticator(new DefaultAuthenticator("vikas@gmail.com", "password"));
+		email.setAuthenticator(new DefaultAuthenticator("username", "password"));
 		email.setSSLOnConnect(true);
 		email.setFrom("user@gmail.com");
 		email.setSubject("TestMail");
@@ -102,5 +132,5 @@ public class Utill {
 		email.send();
 		
 	}
-	
+	*/
 	}
